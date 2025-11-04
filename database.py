@@ -1,11 +1,11 @@
-import sqlalchemy as _sql
-import sqlalchemy.orm as _orm
-import sqlalchemy.ext.declarative as _declarative
+import sqlalchemy as sql
+import sqlalchemy.orm as orm
+import sqlalchemy.ext.declarative as declarative
 
 DATABASE_URL = "postgresql://myuser:password@localhost/fastapi_database"
 
-engine = _sql.create_engine(DATABASE_URL)
+engine = sql.create_engine(DATABASE_URL)
 
-SessionLocal = _orm.sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionLocal = orm.sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-Base = _declarative.declarative_base()
+Base = declarative.declarative_base()

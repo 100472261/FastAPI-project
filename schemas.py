@@ -1,17 +1,17 @@
-import datetime as _dt
-import pydantic as _pydantic
+import datetime as dt
+import pydantic as pydantic
 
-class _BaseContact(_pydantic.BaseModel):
+class BaseContact(pydantic.BaseModel):
     first_name: str
     last_name: str
     email: str
     phone_number: str
 
-class Contact(_BaseContact):
+class Contact(BaseContact):
     id: int
-    date_created: _dt.datetime
+    date_created: dt.datetime
     class Config:
         from_attributes = True
 
-class CreateContact(_BaseContact):
+class CreateContact(BaseContact):
     pass

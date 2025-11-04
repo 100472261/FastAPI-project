@@ -1,13 +1,12 @@
-import datetime as _dt
-import sqlalchemy as _sql
+import datetime as dt
+import sqlalchemy as sql
+import database as database
 
-import database as _database
-
-class Contact(_database.Base):
+class Contact(database.Base):
     __tablename__ = "contacts"
-    id = _sql.Column(_sql.Integer, primary_key=True, index=True)
-    first_name = _sql.Column(_sql.String, index=True)
-    last_name = _sql.Column(_sql.String, index=True)
-    email = _sql.Column(_sql.String, unique=True, index=True)
-    phone_number = _sql.Column(_sql.String, unique=True, index=True)
-    date_created = _sql.Column(_sql.DateTime, default=_dt.datetime.utcnow)
+    id = sql.Column(sql.Integer, primary_key=True, index=True)
+    first_name = sql.Column(sql.String, index=True)
+    last_name = sql.Column(sql.String, index=True)
+    email = sql.Column(sql.String, unique=True, index=True)
+    phone_number = sql.Column(sql.String, unique=True, index=True)
+    date_created = sql.Column(sql.DateTime, default=dt.datetime.utcnow)
