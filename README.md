@@ -13,6 +13,7 @@
 <p align="left">
   <img src="./images/Captura_2.JPG" alt="6" width="1000"/>
 </p>
+<hr>
 <h2 align="left"> ● Post: </h2>
 <p align="justify">Ejm: Se añaden 3 contactos a la tabla <i>contacts</i>. Para ello, se sigue el siguiente esquema:</p>
 {<br>
@@ -26,10 +27,10 @@
   <img src="./images/Captura_3.JPG" alt="6" width="500"/>
 </p>
 <p align="left">
-  <img src="./images/Captura_4.JPG" alt="6" width="500"/>
+  <img src="./images/Captura_5.JPG" alt="6" width="500"/>
 </p>
 <p align="left">
-  <img src="./images/Captura_5.JPG" alt="6" width="500"/>
+  <img src="./images/Captura_4.JPG" alt="6" width="500"/>
 </p>
 <p align="justify"></p>
 <hr>
@@ -54,3 +55,25 @@
   <img src="./images/Captura_10.JPG" alt="6" width="500"/>
 </p>
 <hr>
+<h2 align="left"> ● PUT {contact_id}: </h2>
+<p align="justify">Ejm: Se quiere actualizar el contacto con <i>id = 3 (existe)</i> de la tabla <i>contacts</i>. Para ello, se sigue el siguiente esquema:</p>
+{<br>
+  "first_name": "string",<br>
+  "last_name": "string",<br>
+  "email": "string",<br>
+  "phone_number": "string"<br>
+}
+<br><br>
+<p align="left">
+  <img src="./images/Captura_11.JPG" alt="6" width="500"/>
+</p>
+<p align="left">
+  <img src="./images/Captura_12.JPG" alt="6" width="500"/>
+</p>
+<p align="justify">Ejm: Se quiere actualizar el contacto con <i>id = 4 (no existe)</i> de la tabla <i>contacts</i>.</p>
+<p align="left">
+  <img src="./images/Captura_13.JPG" alt="6" width="500"/>
+</p>
+<p align="left">
+  <img src="./images/Captura_14.JPG" alt="6" width="500"/>
+</p>
