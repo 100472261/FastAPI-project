@@ -77,3 +77,19 @@
 <p align="left">
   <img src="./images/Captura_14.JPG" alt="6" width="500"/>
 </p>
+<hr>
+<h2 align="left"> ● DELETE {contact_id}: </h2>
+<p align="justify">Ejm: Se quiere borrar el contacto con <i>id = 3 (existe)</i> de la tabla <i>contacts</i>.</p>
+<p align="left">
+  <img src="./images/Captura_15.JPG" alt="6" width="500"/>
+</p>
+<p align="left">
+  <img src="./images/Captura_17.JPG" alt="6" width="500"/>
+</p>
+<p align="justify">Ejm: Se quiere borrar el contacto con <i>id = 4 (no existe)</i> de la tabla <i>contacts</i>.</p>
+<p align="left">
+  <img src="./images/Captura_16.JPG" alt="6" width="500"/>
+</p>
+<p align="left">
+  <img src="./images/Captura_18.JPG" alt="6" width="500"/>
+</p>
