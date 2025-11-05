@@ -4,10 +4,15 @@ import services as services
 import sqlalchemy.orm as orm
 from typing import TYPE_CHECKING, List
 
+from database import engine
+import models
+
 if TYPE_CHECKING:
     from sqlalchemy.orm import Session
 
 app = fastapi.FastAPI()
+
+models.database.Base.metadata.create_all(bind=engine)
 
 @app.post("/api/contacts/", response_model=schemas.Contact)
 async def create_contact(contact: schemas.CreateContact, db: orm.Session = fastapi.Depends(services.get_db)):
