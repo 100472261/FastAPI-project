@@ -8,11 +8,24 @@
 <p align="justify">5. Se le añaden permisos al usuario para que pueda realizar operaciones sobre la base de datos mediante el comando <code>grant all privileges on database fastapi_database to myuser;</code>.</p>
 <p align="justify">6. Accedemos a <code>fastapi_database</code> mediante el comando <code>\c fastapi_database</code>.</p>
 <p align="justify">7. En una nueva terminal, creamos un entorno virtual <code>python3 -m venv venv</code> y lo activamos <code>source venv/bin/activate</code>. Posteriormente, instalamos los recursos necesarios <code>pip3 install "fastapi[all]" SQLAlchemy psycopg2-binary</code>.</p>
-<p align="justify">7. Se introduce el comando <code>uvicorn main:app --reload</code> para ejecutar la aplicación FastAPI.</p>
+<p align="justify">7. Introducimos el comando <code>uvicorn main:app --reload</code> para ejecutar la aplicación FastAPI.</p>
 <p align="justify">8. Accedemos a <code>http://127.0.0.1:8000/docs</code> para probar las funcionalidades de la API implementada.</p>
+<p align="left">
+  <img src="./images/Captura_2.JPG" alt="6" width="1000"/>
+</p>
 <h2 align="left"> ● Post: </h2>
 <p align="justify">Se añaden 3 usuarios siguiendo el esquema:</p>
+{<br>
+  "first_name": "string",<br>
+  "last_name": "string",<br>
+  "email": "string",<br>
+  "phone_number": "string"<br>
+}
+<br><br>
 <p align="left">
-  <img src="./images/Captura_plantilla.JPG" alt="6" width="1000"/>
+  <img src="./images/Captura_4.JPG" alt="6" width="750"/>
+</p>
+<p align="left">
+  <img src="./images/Captura_5.JPG" alt="6" width="750"/>
 </p>
 <p align="justify"></p>
